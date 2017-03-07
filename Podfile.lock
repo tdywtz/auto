@@ -1,0 +1,74 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
+  - MJNIndexView (0.0.1)
+  - MJRefresh (3.1.12)
+  - pop (1.0.9)
+  - Reachability (3.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - TTTAttributedLabel (2.0.0)
+  - UMengAnalytics-NO-IDFA (4.1.5)
+  - UMengUShare/Core (6.1):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.1)
+  - UMengUShare/Social/QQ (6.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.1):
+    - UMengUShare/Core
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Masonry (~> 1.0.2)
+  - MBProgressHUD (~> 0.9.2)
+  - MJExtension (~> 3.0.13)
+  - MJNIndexView (~> 0.0.1)
+  - MJRefresh (~> 3.1.12)
+  - pop (~> 1.0.9)
+  - Reachability (~> 3.2)
+  - SDWebImage (~> 3.8.1)
+  - TTTAttributedLabel
+  - UMengAnalytics-NO-IDFA (~> 4.1.1)
+  - UMengUShare/Social/QQ (~> 6.1)
+  - UMengUShare/Social/Sina (~> 6.1)
+  - UMengUShare/Social/WeChat (~> 6.1)
+  - YYText (~> 1.0.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJNIndexView: 6186c3ea302624ed5c008dba8a178677a7523cab
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UMengAnalytics-NO-IDFA: f1b08b540eba6ebad044a574cae6d988cf40cfda
+  UMengUShare: 6c3902a68a06d01031bed6f426e97b89d4fc504f
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 4bf9834d092c546ab778f16eafe318971275ceb8
+
+COCOAPODS: 1.1.1
