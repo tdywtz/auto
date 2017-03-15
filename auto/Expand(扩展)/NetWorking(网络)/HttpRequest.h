@@ -46,5 +46,6 @@
                        failure:(void (^)(NSError * error))failure;
 
 
++ (void)updatePrefix;
 
 @end

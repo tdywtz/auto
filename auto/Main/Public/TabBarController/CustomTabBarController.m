@@ -96,7 +96,8 @@
     self.viewControllers = @[nvc1,nvc2,nvc3,nvc4];
     [self customTabBar];
 
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
+
 }
 
 
@@ -162,6 +163,8 @@ char *mystrtok(char *str, const char *delim)
         //选中颜色
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorFromRGBValue(0x009ffb)} forState:UIControlStateSelected];
     }
+
+    
 }
 
 -(UIImage *)createImageWithName:(NSString *)imageName

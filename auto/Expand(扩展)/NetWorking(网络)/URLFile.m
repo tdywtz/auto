@@ -36,26 +36,34 @@
 
 /**车质网专用*/
 + (NSString *)stringForCZWServiceWithAct:(NSString *)act{
-    return [NSString stringWithFormat:@"%@%@%@",[self prefixString],@"/AppServer/forCZWService.ashx?",act];
+    return [NSString stringWithFormat:@"%@%@%@",[self prefixString],@"/forCZWService.ashx?",act];
 }
 /**公用*/
 + (NSString *)stringForCommonServiceWithAct:(NSString *)act{
-    return [NSString stringWithFormat:@"%@%@%@",[self prefixString],@"/AppServer/forCommonService.ashx?",act];
+    return [NSString stringWithFormat:@"%@%@%@",[self prefixString],@"/forCommonService.ashx?",act];
 }
 
 /**前缀*/
 + (NSString *)prefixString{
+
 #if DEBUG
-    // return  @"http://m.12365auto.com";
-    return  @"http://192.168.1.114:8888";
+    NSString *base = [[NSUserDefaults standardUserDefaults] objectForKey:URL_PrefirString_debug];
+    if (base) {
+        return base;
+    }
+    return  @"http://192.168.1.114:8888/AppServer";
 #else
-    return  @"http://m.12365auto.com";
+    NSString *base = [[NSUserDefaults standardUserDefaults] objectForKey:URL_PrefirString_release];
+    if (base) {
+        return base;
+    }
+    return  @"http://m.12365auto.com/AppServer";
 #endif
 }
 
 /**注册协议*/
 + (NSString *)urlStringRegistrationAgreement{
-    return [NSString stringWithFormat:@"%@%@",[self prefixString],@"/user/agreeForIOS.shtml"];
+    return @"http://m.12365auto.com/user/agreeForIOS.shtml";
 }
 
 /**登录*/
@@ -107,10 +115,6 @@
     return [self stringForCommonServiceWithAct:parameter];
 }
 
-///**全部故障*/
-//+ (NSString *)urlStringForIssue{
-//    return [self stringWithBasic:@"act=issue&seriesID=%@&year=%@&count=%@"];
-//}
 
 /**故障大全页面搜索结果*/
 + (NSString *)url_searchWithAtt:(NSString *)att
@@ -242,6 +246,7 @@
                          sid:(NSString *)sid{
     NSString *parameter = @"act=dis";
     parameter = [parameter appendingWithValue:pid key:@"pid"];
+    parameter = [parameter appendingWithValue:cid key:@"cid"];
     parameter = [parameter appendingWithValue:sid key:@"sid"];
     return [self stringForCommonServiceWithAct:parameter];
 }

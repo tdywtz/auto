@@ -103,7 +103,7 @@
     UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:self.shareTitle descr:shareContent thumImage:shareIamge];
     //设置网页地址
     shareObject.webpageUrl = self.shareUrl;
-   // NSLog(@"%@",self.shareUrl)
+  
 
     //分享消息对象设置分享内容对象
     messageObject.shareObject = shareObject;

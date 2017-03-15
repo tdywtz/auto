@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-
+#define URL_PrefirString_release @"URL_PrefirString_release"//接口前缀
+#define URL_PrefirString_debug @"URL_PrefirString_release"//接口前缀
 
 @interface URLFile : NSObject
 

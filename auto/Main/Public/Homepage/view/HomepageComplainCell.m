@@ -70,7 +70,7 @@
         return;
     }
 
-    if (_point.x+30 > WIDTH) {
+    if (_point.x+40 > WIDTH) {
         _point = CGPointMake(0, _point.y+25);
     }
     CGFloat x;
@@ -81,7 +81,7 @@
     }
 
     UIImageView *questionImageView = [[UIImageView alloc] initWithFrame:CGRectMake(x, _point.y, 20, 20)];
-    questionImageView.image = [UIImage imageNamed:@"auto_complain_serve"];
+    questionImageView.image = [UIImage imageNamed:@"auto_complain_server"];
     [self addSubview:questionImageView];
     _point = CGPointMake(questionImageView.lh_right+5, _point.y);
 
@@ -92,15 +92,11 @@
     for (int i = 0; i < fwtd.count; i ++) {
          NSDictionary *dict = fwtd[i];
 
-
-
         UILabel *labelServer = [self labelWithText:dict[@"bw"] backColor:colorGreen borderColor:nil];
         [self upDataPint:labelServer.lh_width];
         labelServer.lh_left = _point.x;
         labelServer.lh_top = _point.y;
         [self addSubview:labelServer];
-
-
 
         if ([dict[@"ques"] length]) {
             _point = CGPointMake(labelServer.lh_right-1, labelServer.lh_top);

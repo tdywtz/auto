@@ -375,7 +375,6 @@
     if (slected == 0) {
         if ([CZWManager manager].isLogin) {
 
-
             WriteViewController *commentView = [[WriteViewController alloc] init];
             [commentView send:^(NSString *content) {
                 [weakSelf submitComment:content];
@@ -383,10 +382,10 @@
             [self presentViewController:commentView animated:YES completion:nil];
         }else{
             UINavigationController *nvc = [LoginViewController instanceSuccess:^{
-                CommentListViewController *comment = [[CommentListViewController alloc] init];
-                comment.type = self.type;
-                comment.cid = self.cid;
-                [weakSelf.navigationController pushViewController:comment animated:YES];
+                WriteViewController *commentView = [[WriteViewController alloc] init];
+                [commentView send:^(NSString *content) {
+                    [weakSelf submitComment:content];
+                }];
             }];
             [self presentViewController:nvc animated:YES completion:nil];
         }

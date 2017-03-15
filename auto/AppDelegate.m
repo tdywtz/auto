@@ -10,9 +10,6 @@
 #import "CustomTabBarController.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import "CZWAppPrompt.h"
-#import "Appirater.h"
-
-#import "JPEngine.h"
 
 @interface AppDelegate ()
 {
@@ -27,11 +24,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+    [HttpRequest updatePrefix];
 
-//    [JPEngine startEngine];
-//    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
-//    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
-//    [JPEngine evaluateScript:script];
 
     CZWAppPrompt *prompt = [CZWAppPrompt sharedInstance];
     prompt.appId = THE_APPID;
@@ -61,13 +55,6 @@
     return YES;
 }
 
-- (UIView *)genView
-{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
-    view.backgroundColor = [UIColor redColor];
-    return view;
-
-}
 
 /**友盟统计*/
 - (void)um_analyics{
@@ -88,9 +75,9 @@
 
     [[UMSocialManager defaultManager] setUmSocialAppkey:@"55f913b2e0f55aaf49003031"];
     //QQ
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1104736184" appSecret:@"PfKmY8sIFec4zQdE" redirectURL:@"http://www.12365auto.com"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1105499488" appSecret:@"qYxvM0QKjkd58Ye5" redirectURL:@"http://www.12365auto.com"];
     //微信
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatTimeLine appKey:@"wxa8074491f7b6fba6" appSecret:@"b6d0bb0d1473fc5c126f800ec39a3a70" redirectURL:@"http://www.12365auto.com"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatTimeLine appKey:@"wxfb5a87287bee3ff9" appSecret:@"7d2efe456ae851b688dfc751c807088b" redirectURL:@"http://www.12365auto.com"];
     //新浪微博
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"269405812" appSecret:@"92de194ff9af2e808537dfdb587de3be" redirectURL:@"http://sns.whalecloud.com/sina2/callback"];
 

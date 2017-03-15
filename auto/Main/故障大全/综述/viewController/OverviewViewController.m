@@ -20,6 +20,7 @@
 #import "HomepageComplainCell.h"
 #import "HomepageSectionHeaderView.h"
 #import "HomepageSectionFooterView.h"
+#import "LCReputationDetailsViewController.h"
 
 #import "ReputationCell.h"
 
@@ -169,11 +170,19 @@
 #pragma mark - UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     HomepageSectionModel *sectionModel = _dataArray[indexPath.section];
-
-        HomepageComplainModel *model = sectionModel.rowModels[indexPath.row];
+        NSObject *obj = sectionModel.rowModels[indexPath.row];
+    if ([obj isKindOfClass:[HomepageComplainModel class]]) {
+        HomepageComplainModel *model = (HomepageComplainModel*)obj;
         ComplainDetailsViewController *detail = [[ComplainDetailsViewController alloc] init];
         detail.cid = model.cpid;
         [self.navigationController pushViewController:detail animated:YES];
+    }else if ([obj isKindOfClass:[ReputationModel class]]){
+        ReputationModel *model = (ReputationModel*)obj;
+        LCReputationDetailsViewController *details = [[LCReputationDetailsViewController alloc] init];
+        details.ID = model.ID;
+        [self.navigationController pushViewController:details animated:YES];
+    }
+
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

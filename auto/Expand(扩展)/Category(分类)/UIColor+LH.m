@@ -18,7 +18,6 @@
     int R = (colorLong & 0xFF0000) >> 16;
     int G = (colorLong & 0x00FF00) >> 8;
     int B = colorLong & 0x0000FF;
-
     return [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:1.f];
 }
 

@@ -352,7 +352,6 @@ typedef enum {
                     [weakSelf submitComment:content];
                 }];
                 [self presentViewController:commentView animated:YES completion:nil];
-
             }];
             [self presentViewController:nvc animated:YES completion:nil];
         }

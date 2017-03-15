@@ -60,8 +60,8 @@
 
     [self creaRightItem];
     [self createTableView];
-
 }
+
 
 #pragma mark - 我要投诉
 -(void)creaRightItem{

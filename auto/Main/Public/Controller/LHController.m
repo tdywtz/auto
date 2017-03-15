@@ -54,7 +54,7 @@
     field.clearButtonMode = YES;
     field.textColor = colorBlack;
     //关闭首字母大写
-    field.autocapitalizationType=NO;
+    field.autocapitalizationType = NO;
     if (delegate) {
         field.delegate = delegate;
     }

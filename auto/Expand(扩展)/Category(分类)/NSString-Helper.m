@@ -492,9 +492,7 @@ static  NSString * RE_Postalcode = @"^[0-8]\\d{5}(?!\\d)$";
         return isMatch;
 }
 
-//- (BOOL)isEmail{
-//
-//}
+
 
 
 @end

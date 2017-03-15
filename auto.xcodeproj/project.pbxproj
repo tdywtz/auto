@@ -31,8 +31,8 @@
 		4D21075D1BD9C47E00B5CB4F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D21075C1BD9C47E00B5CB4F /* libiconv.tbd */; };
 		4D21075F1BD9C48800B5CB4F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D21075E1BD9C48800B5CB4F /* libstdc++.tbd */; };
 		4D2107611BD9C49300B5CB4F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2107601BD9C49300B5CB4F /* libz.tbd */; };
+		4D251D6F1E767791003A6739 /* auto_complain_server@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D251D6E1E767791003A6739 /* auto_complain_server@2x.png */; };
 		4D280E381E5AAE5C004DED0E /* auto_投诉列表_投诉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D280E371E5AAE5C004DED0E /* auto_投诉列表_投诉@2x.png */; };
-		4D2B4CEF1E5AEE1D006816D9 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D2B4CEE1E5AEE1D006816D9 /* demo.js */; };
 		4D513D7A1E5ECDCA0081382F /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513D771E5ECDCA0081382F /* HttpRequest.m */; };
 		4D513D7B1E5ECDCA0081382F /* URLFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513D791E5ECDCA0081382F /* URLFile.m */; };
 		4D513D851E5ECE190081382F /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513D7E1E5ECE190081382F /* AppUtility.m */; };
@@ -165,8 +165,6 @@
 		4D513FCE1E5ED6180081382F /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FCA1E5ED6180081382F /* BasicViewController.m */; };
 		4D513FD41E5ED65E0081382F /* JKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FD11E5ED65E0081382F /* JKDBHelper.m */; };
 		4D513FD51E5ED65E0081382F /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FD31E5ED65E0081382F /* JKDBModel.m */; };
-		4D513FDA1E5ED66C0081382F /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FD81E5ED66C0081382F /* JPEngine.m */; };
-		4D513FDB1E5ED66C0081382F /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D513FD91E5ED66C0081382F /* JSPatch.js */; };
 		4D513FDF1E5ED6980081382F /* CZWIMInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FDE1E5ED6980081382F /* CZWIMInputTextView.m */; };
 		4D513FE41E5ED7010081382F /* FootCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FE31E5ED7010081382F /* FootCommentView.m */; };
 		4D513FE91E5ED7100081382F /* LHDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D513FE61E5ED7100081382F /* LHDatePickView.m */; };
@@ -238,7 +236,6 @@
 		4DCA2C0D1E5EA26100B81165 /* auto_common_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C0C1E5EA26100B81165 /* auto_common_search@2x.png */; };
 		4DCA2C0F1E5EA27000B81165 /* auto_complain_cpid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C0E1E5EA27000B81165 /* auto_complain_cpid@2x.png */; };
 		4DCA2C111E5EA27D00B81165 /* auto_complain_quality@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C101E5EA27D00B81165 /* auto_complain_quality@2x.png */; };
-		4DCA2C131E5EA28600B81165 /* auto_complain_serve@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C121E5EA28600B81165 /* auto_complain_serve@2X.png */; };
 		4DCA2C151E5EA29000B81165 /* auto_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C141E5EA29000B81165 /* auto_logo@2x.png */; };
 		4DCA2C171E5EA2BA00B81165 /* bar_btn_icon_returntext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C161E5EA2BA00B81165 /* bar_btn_icon_returntext@2x.png */; };
 		4DCA2C191E5EA2E600B81165 /* comment_评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA2C181E5EA2E600B81165 /* comment_评论@2x.png */; };
@@ -284,6 +281,7 @@
 		4DF886401E66736900AF3C2B /* auto_common_回复@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8863F1E66736900AF3C2B /* auto_common_回复@2x.png */; };
 		4DF886421E6676F200AF3C2B /* auto_综述_口碑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF886411E6676F200AF3C2B /* auto_综述_口碑@2x.png */; };
 		4DF886441E66954400AF3C2B /* auto_reputation_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF886431E66954400AF3C2B /* auto_reputation_avatar@2x.png */; };
+		4DFCB1251E7915A80069994D /* 车型对比-删除@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DFCB1241E7915A80069994D /* 车型对比-删除@2x.png */; };
 		FB3B3E8C17C1A54109FE90E2 /* libPods-auto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9BC4AF0115A31107621648 /* libPods-auto.a */; };
 /* End PBXBuildFile section */
 
@@ -340,9 +338,9 @@
 		4D21075C1BD9C47E00B5CB4F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		4D21075E1BD9C48800B5CB4F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		4D2107601BD9C49300B5CB4F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4D251D6E1E767791003A6739 /* auto_complain_server@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_complain_server@2x.png"; sourceTree = "<group>"; };
 		4D280E371E5AAE5C004DED0E /* auto_投诉列表_投诉@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_投诉列表_投诉@2x.png"; sourceTree = "<group>"; };
 		4D292FFD1E5C12E400F1C0C5 /* auto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "auto-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D2B4CEE1E5AEE1D006816D9 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		4D513D761E5ECDCA0081382F /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		4D513D771E5ECDCA0081382F /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		4D513D781E5ECDCA0081382F /* URLFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLFile.h; sourceTree = "<group>"; };
@@ -606,9 +604,6 @@
 		4D513FD11E5ED65E0081382F /* JKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBHelper.m; sourceTree = "<group>"; };
 		4D513FD21E5ED65E0081382F /* JKDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBModel.h; sourceTree = "<group>"; };
 		4D513FD31E5ED65E0081382F /* JKDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBModel.m; sourceTree = "<group>"; };
-		4D513FD71E5ED66C0081382F /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
-		4D513FD81E5ED66C0081382F /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
-		4D513FD91E5ED66C0081382F /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
 		4D513FDD1E5ED6980081382F /* CZWIMInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZWIMInputTextView.h; sourceTree = "<group>"; };
 		4D513FDE1E5ED6980081382F /* CZWIMInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZWIMInputTextView.m; sourceTree = "<group>"; };
 		4D513FE21E5ED7010081382F /* FootCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootCommentView.h; sourceTree = "<group>"; };
@@ -701,7 +696,6 @@
 		4DCA2C0C1E5EA26100B81165 /* auto_common_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_common_search@2x.png"; sourceTree = "<group>"; };
 		4DCA2C0E1E5EA27000B81165 /* auto_complain_cpid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_complain_cpid@2x.png"; sourceTree = "<group>"; };
 		4DCA2C101E5EA27D00B81165 /* auto_complain_quality@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_complain_quality@2x.png"; sourceTree = "<group>"; };
-		4DCA2C121E5EA28600B81165 /* auto_complain_serve@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_complain_serve@2X.png"; sourceTree = "<group>"; };
 		4DCA2C141E5EA29000B81165 /* auto_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_logo@2x.png"; sourceTree = "<group>"; };
 		4DCA2C161E5EA2BA00B81165 /* bar_btn_icon_returntext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_btn_icon_returntext@2x.png"; sourceTree = "<group>"; };
 		4DCA2C181E5EA2E600B81165 /* comment_评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment_评论@2x.png"; sourceTree = "<group>"; };
@@ -755,6 +749,7 @@
 		4DF8863F1E66736900AF3C2B /* auto_common_回复@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_common_回复@2x.png"; sourceTree = "<group>"; };
 		4DF886411E6676F200AF3C2B /* auto_综述_口碑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_综述_口碑@2x.png"; sourceTree = "<group>"; };
 		4DF886431E66954400AF3C2B /* auto_reputation_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_reputation_avatar@2x.png"; sourceTree = "<group>"; };
+		4DFCB1241E7915A80069994D /* 车型对比-删除@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车型对比-删除@2x.png"; sourceTree = "<group>"; };
 		7D9BC4AF0115A31107621648 /* libPods-auto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-auto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0D7AA3D0CA90686D46DF82 /* Pods-auto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-auto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-auto/Pods-auto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1592,7 +1587,6 @@
 				4D1E65EE1E64100B00D4691E /* LHPhotos */,
 				4D513FF41E5ED7F10081382F /* FMDB */,
 				4D513FDC1E5ED68E0081382F /* TextView */,
-				4D513FD61E5ED66C0081382F /* JSPatch */,
 				4D513FCF1E5ED65E0081382F /* DBModel */,
 				4D513F9C1E5ED5F50081382F /* 刷新 */,
 				4D513F921E5ED5E60081382F /* 分享 */,
@@ -1729,16 +1723,6 @@
 				4D513FD31E5ED65E0081382F /* JKDBModel.m */,
 			);
 			path = DBModel;
-			sourceTree = "<group>";
-		};
-		4D513FD61E5ED66C0081382F /* JSPatch */ = {
-			isa = PBXGroup;
-			children = (
-				4D513FD71E5ED66C0081382F /* JPEngine.h */,
-				4D513FD81E5ED66C0081382F /* JPEngine.m */,
-				4D513FD91E5ED66C0081382F /* JSPatch.js */,
-			);
-			path = JSPatch;
 			sourceTree = "<group>";
 		};
 		4D513FDC1E5ED68E0081382F /* TextView */ = {
@@ -1976,6 +1960,7 @@
 		4DCA2BFA1E5EA1C400B81165 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				4DFCB1241E7915A80069994D /* 车型对比-删除@2x.png */,
 				4DC98CAA1E67AED800CAC8BA /* auto_车型参数_加号@2x.png */,
 				4DF886431E66954400AF3C2B /* auto_reputation_avatar@2x.png */,
 				4DF886411E6676F200AF3C2B /* auto_综述_口碑@2x.png */,
@@ -1991,7 +1976,7 @@
 				4DCA2C181E5EA2E600B81165 /* comment_评论@2x.png */,
 				4DCA2C161E5EA2BA00B81165 /* bar_btn_icon_returntext@2x.png */,
 				4DCA2C141E5EA29000B81165 /* auto_logo@2x.png */,
-				4DCA2C121E5EA28600B81165 /* auto_complain_serve@2X.png */,
+				4D251D6E1E767791003A6739 /* auto_complain_server@2x.png */,
 				4DCA2C101E5EA27D00B81165 /* auto_complain_quality@2x.png */,
 				4DCA2C0E1E5EA27000B81165 /* auto_complain_cpid@2x.png */,
 				4DCA2C0C1E5EA26100B81165 /* auto_common_search@2x.png */,
@@ -2031,7 +2016,6 @@
 				4D292FFD1E5C12E400F1C0C5 /* auto-Bridging-Header.h */,
 				4D73F4311B3B80FF0029727A /* AppDelegate.h */,
 				4D73F4321B3B80FF0029727A /* AppDelegate.m */,
-				4D2B4CEE1E5AEE1D006816D9 /* demo.js */,
 				4D590FFE1B1D676F00361C21 /* pch.pch */,
 				4D590FE21B1D670600361C21 /* Main.storyboard */,
 				4D590FE51B1D670600361C21 /* Images.xcassets */,
@@ -2205,7 +2189,6 @@
 				4DEB20341C054F95002A0C48 /* che1@2x.png in Resources */,
 				4DCA2C191E5EA2E600B81165 /* comment_评论@2x.png in Resources */,
 				4D8506A01B4BA0CC00915C96 /* xuanze.png in Resources */,
-				4D513FDB1E5ED66C0081382F /* JSPatch.js in Resources */,
 				4D513F821E5ED5B00081382F /* starBackground@2x.png in Resources */,
 				4DEB203C1C054F95002A0C48 /* che9@2x.png in Resources */,
 				4DCA2C251E5EA48100B81165 /* center_settring@2x.png in Resources */,
@@ -2225,7 +2208,6 @@
 				4DCA2C2F1E5EA4C800B81165 /* centre_favorite@2x.png in Resources */,
 				4DCA2C011E5EA21000B81165 /* auto_投诉详情_提问@2x.png in Resources */,
 				4D590FE41B1D670600361C21 /* Main.storyboard in Resources */,
-				4D2B4CEF1E5AEE1D006816D9 /* demo.js in Resources */,
 				4D7301F81BFD590E00A786A0 /* selectIamge_add@2x.png in Resources */,
 				4DF886441E66954400AF3C2B /* auto_reputation_avatar@2x.png in Resources */,
 				4D1E659B1E63CD0200D4691E /* auto_answerDetail_answer@2x.png in Resources */,
@@ -2241,6 +2223,7 @@
 				4DCA2C1D1E5EA30500B81165 /* comment_收藏@2x.png in Resources */,
 				4D7DBBA41B42360C0033C271 /* flag2@2x.png in Resources */,
 				4D513F9A1E5ED5E60081382F /* LHMenu.bundle in Resources */,
+				4D251D6F1E767791003A6739 /* auto_complain_server@2x.png in Resources */,
 				4D73F5D81B3B81440029727A /* arrow@2x.png in Resources */,
 				4DEB203F1C054F95002A0C48 /* che12@2x.png in Resources */,
 				4D73F6191B3B81440029727A /* system8@2x.png in Resources */,
@@ -2255,6 +2238,7 @@
 				4DEB20351C054F95002A0C48 /* che2@2x.png in Resources */,
 				4DEB203D1C054F95002A0C48 /* che10@2x.png in Resources */,
 				4D7DBBA21B4236040033C271 /* flag1@2x.png in Resources */,
+				4DFCB1251E7915A80069994D /* 车型对比-删除@2x.png in Resources */,
 				4DF8863C1E66735300AF3C2B /* auto_common_点赞高亮@2x.png in Resources */,
 				4D73F6141B3B81440029727A /* system3@2x.png in Resources */,
 				4DCA2C351E5EA50200B81165 /* sife@2x.png in Resources */,
@@ -2264,7 +2248,6 @@
 				4DF886241E6651BB00AF3C2B /* auto_综述_投诉@2x.png in Resources */,
 				4DEB20381C054F95002A0C48 /* che5@2x.png in Resources */,
 				4DCA2C0F1E5EA27000B81165 /* auto_complain_cpid@2x.png in Resources */,
-				4DCA2C131E5EA28600B81165 /* auto_complain_serve@2X.png in Resources */,
 				4D73F6121B3B81440029727A /* system1@2x.png in Resources */,
 				4D7DBBAA1B42361C0033C271 /* flag5@2x.png in Resources */,
 				4DC98CD81E67FA3600CAC8BA /* tabbar_投诉_灰色@2x.png in Resources */,
@@ -2365,7 +2348,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1E65DB1E63EE2200D4691E /* CZWAppPrompt.m in Sources */,
-				4D513FDA1E5ED66C0081382F /* JPEngine.m in Sources */,
 				4D513ED91E5ECEEC0081382F /* MyComplainCell.m in Sources */,
 				4D513F4D1E5ED3FC0081382F /* HomepageAnswerModel.m in Sources */,
 				4D513EC11E5ECEEC0081382F /* ChartTableViewCell.m in Sources */,
